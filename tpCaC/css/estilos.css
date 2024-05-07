@@ -1,0 +1,249 @@
+body {
+    margin: 0; 
+	font-family: 'Roboto', sans-serif;
+}
+
+.lista-reset {
+    list-style-type: none;	
+    padding-left: 0;
+    display: flex;
+    margin: 0;
+}
+
+header{
+	background-color: gainsboro;
+}
+h1{
+	font-family: 'Merriweather', serif;
+	font-size: 50px;
+	color: white;
+
+}
+
+.logo, h2{
+	font-family: 'Merriweather', serif;
+	font-size: 50px;
+	color: darkcyan;
+	text-align: center;
+}
+
+header a.logo {
+    font-family: 'Merriweather', serif;
+}
+
+.logo {
+    font-size: 24px;
+    color: darkcyan;
+	white-space: nowrap;
+}
+
+.menu a {
+	white-space: nowrap;
+}
+
+#portada {
+	color: white;
+}
+
+#formcontacto input,
+#formcontacto textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding: 5px;
+	font-family: inherit;
+	font-size: 18px;
+	border: 1px solid darkcyan;
+}
+
+#formcontacto label {
+	color: darkcyan;
+}
+
+#formcontacto input[type=submit] {
+	background-color: #008b8b;
+	color: white;
+	border-width: 0;
+	padding: 13px;
+	display: inline-block;
+	margin-top: 10px;
+}
+.logo {
+    background-image: url(../imagenes/carrito-de-supermercado.png);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;   
+}
+
+.portada-center {
+    text-align: center;
+}
+
+.fondo-portada {
+    background-image: 
+		linear-gradient(to top, rgba(0, 0, 0, 0.2), 80% , rgba(0, 0, 0, 0.8)) ,		
+		url(../imagenes/supermercado4.0.jpg) ;
+    background-size: cover;
+    background-attachment: scroll , fixed;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.menu a {
+    background-color: #e8e8e8;
+    padding: 10px 20px;
+    color: darkcyan;
+    border-right: 2px solid gainsboro;
+    transition: all linear .2s;
+}
+.menu a:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.menu a:active {
+    background-color: darkcyan;
+}
+
+section {
+	text-align: justify;
+}
+
+
+.pie {
+	padding: 40px;
+	background-color:darkcyan;
+}
+
+.redes a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin: 10px;
+}
+.redes a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.redes a:active {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {	
+    display: flex;
+    justify-content: space-between;
+	flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;	
+}
+
+.lista-reset {
+	flex-direction: column;
+}
+
+.menu a {
+	display: block;
+}
+.menu {
+	width: 100%;
+}
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#portada {
+	padding-top: 140px;
+	padding-bottom: 120px;
+}
+.galeria-contenedor {
+	display: flex;
+	flex-wrap: wrap;	
+	justify-content: center;	
+}
+.producto {
+	line-height: 0;
+	margin: 3px;
+    position: relative;
+}
+
+.destacado {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	background-color: gold;
+	line-height: normal;
+	font-weight: bold;
+	padding: 4px 8px; 
+	border-radius: 18px;
+}
+.redes {
+	justify-content: center;
+}
+
+.contenedor {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#contacto .contenedor {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.formularios {
+	width: 100%;
+	padding: 20px 40px;
+	width: 100%;
+	background-color: #eeeeee;
+}
+
+
+
+@media (min-width:480px) {
+
+}
+
+
+@media (min-width:768px) {
+
+	
+	header {
+		position: fixed;
+		top: 0;
+		z-index: 999;
+	}
+	
+	.lista-reset {
+		flex-direction: row;
+	}
+	.menu {		
+		display: flex;
+		justify-content: center;
+	}
+	
+	#contacto .contenedor {
+		flex-direction: row;
+	}	
+}
+
+
+@media (min-width:1024px) {
+	
+	header {
+		flex-direction: row;
+	}
+	.menu {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.fondo-contacto {
+	    background: linear-gradient(90deg, darkcyan 50% , #eeeeee 50%);
+	}	
+}
